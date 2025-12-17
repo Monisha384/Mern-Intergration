@@ -14,8 +14,8 @@ exports.getProduct = async (req, res) => {
 // POST
 exports.postProduct = async (req, res) => {
   try {
-    const { name, price, description } = req.body;
-    const newProduct = new productModel({ name, price, description });
+    const { name, price, description,image } = req.body;
+    const newProduct = new productModel({ name, price, description,image });
     await newProduct.save();
     res.status(201).json(newProduct);
   } catch (error) {
@@ -45,11 +45,11 @@ exports.deleteProduct = async (req, res) => {
 exports.updateProduct = async (req, res) => {
   try {
     const { id } = req.params;
-    const { name, price, description } = req.body;
+    const { name, price, description,image } = req.body;
 
     const updated = await productModel.findByIdAndUpdate(
       id,
-      { name, price, description },
+      { name, price, description,image },
       { new: true }
     );
 
