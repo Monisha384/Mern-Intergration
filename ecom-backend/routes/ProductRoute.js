@@ -7,6 +7,11 @@ const {
   updateProduct
 } = require("../controller/productController");
 
+// Test route
+router.get("/test", (req, res) => {
+  res.json({ message: "Backend is working!" });
+});
+
 router.get("/product", getProduct);
 router.post("/postproduct", postProduct);
 router.delete("/deleteproduct/:id", deleteProduct);
