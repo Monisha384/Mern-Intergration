@@ -61,7 +61,7 @@ function App() {
       name: 'Baby Teddy Bear',
       price: 1999,
       description: 'Toys - Adorable small teddy bear perfect for babies and kids',
-      image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=400&fit=crop'
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Is6crRG4HM1vUE9hHacn75cizr32o9viEA&s'
     },
     {
       _id: '8',
@@ -82,7 +82,7 @@ function App() {
       name: 'Skincare Bundle',
       price: 4999,
       description: 'Gifts - Complete skincare routine with cleanser, toner and moisturizer',
-      image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=400&fit=crop'
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZZ_jaXXOlraSbO_3ui3hD2vxE8Y6rmZYyBw&s'
     }
   ];
 
@@ -226,7 +226,7 @@ function App() {
       ) : (
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', // Changed to auto-fill
           gap: '2rem'
         }}>
           {filteredProducts.map(product => (
@@ -978,10 +978,10 @@ function App() {
             <h4 style={{fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '1rem'}}>Contact Us</h4>
             <div style={{color: '#94a3b8'}}>
               <p style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
-                📧 <a href="mailto:support@elitemart.com" style={{color: '#60a5fa', textDecoration: 'none'}}>support@elitemart.com</a>
+                📧 <a href="mailto:support@elitemart.com" style={{color: '#60a5fa', textDecoration: 'none'}}>moni@gmail.com</a>
               </p>
               <p style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
-                📞 +91 98765 43210
+                📞 +91 9345528492
               </p>
               <p style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
                 📍 Mumbai, Maharashtra, India
@@ -1012,7 +1012,7 @@ function App() {
           textAlign: 'center',
           color: '#94a3b8'
         }}>
-          <p>© 2024 EliteMart Professional. All rights reserved.</p>
+          <p>© 2025 EliteMart Professional. All rights reserved.</p>
         </div>
       </footer>
     </div>
