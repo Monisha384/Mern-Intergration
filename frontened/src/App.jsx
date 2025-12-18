@@ -58,7 +58,7 @@ function App() {
     },
     {
       _id: '7',
-      name: 'Baby Teddy Bear',
+      name: 'Teddy Bear',
       price: 1999,
       description: 'Toys - Adorable small teddy bear perfect for babies and kids',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Is6crRG4HM1vUE9hHacn75cizr32o9viEA&s'
